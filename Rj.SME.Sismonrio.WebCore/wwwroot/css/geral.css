@@ -1,0 +1,464 @@
+/** INDICE CSS 
+ *
+ * . Geral (html, body)
+ * . Cabeçalho
+ * . Titulo Modulo
+ * . CONTAINERS
+ * . MENU PRINCIPAL
+ * . Icones Menu
+ * . USUARIO E LOGOUT MENU
+
+/***Geral***/
+
+/***Cabeçalho***/
+.header {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-color: #0F61A4;
+    /*background-image: url(../images/layout/header_prefeitura_rio.png);*/
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+
+.logoCab {
+    position: absolute;
+    top: 5px;
+    left: 35px;
+    width: 44px;
+    height: 56px;
+    min-height: 56px;
+    line-height: 56px;
+    background-image: url(../content/themes/images/logoCab.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.logoTituloCab, .moduloHeader {
+    position: absolute;
+    vertical-align: middle !important;
+    padding-left: 90px;
+    font-family: 'AvantGardeBkBTBook', Helvetica, sans-serif;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.logoTituloCab {
+    vertical-align: middle !important;
+    line-height: 70px !important;
+    font-size: 24px;
+    color: #fff;
+}
+
+.moduloHeader {
+    top: 16px;
+    font-size: 18px;
+    color: #EAE400;
+    height: 50px !important;
+    width: 100%;
+}
+
+    .moduloHeader .spnAmbiente {
+        position: relative;
+        top: -2px;
+        margin-left: 15px;
+        padding: 3px 10px 3px;
+        color: #0D5591;
+        background-color: #fff;
+        border-radius: 4px;
+        font-size: 11px;
+        font-family: arial;
+        text-transform: capitalize;
+        text-shadow: none !important;
+    }
+
+
+/*Cabeçalho MOBILE*/
+@media (max-width:950px) {
+    .header {
+        background-position-x: -20px !important;
+        -moz-background-position-x: -20px !important;
+        -webkit-background-position-x: -20px !important;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        transition: all 0.4s;
+    }
+
+    .logoCab {
+        position: absolute;
+        top: 5px;
+        left: 20px !important;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        transition: all 0.4s;
+    }
+
+
+    .logoTituloCab {
+        font-size: 30px;
+        color: #fff;
+        width: 185px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-left: 80px;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        transition: all 0.4s;
+        /*width: 600px!important;
+	 white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;*/
+    }
+
+}
+
+
+
+@media (max-width:767px) {
+    .header {
+        background-position-x: -20px !important;
+        -moz-background-position-x: -20px !important;
+        -webkit-background-position-x: -20px !important;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        transition: all 0.4s;
+    }
+
+    .logoCab {
+        position: absolute;
+        top: 5px;
+        left: 20px !important;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        transition: all 0.4s;
+    }
+
+    .logoTituloCab {
+        font-size: 30px;
+        width: 185px;
+        color: #fff;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-left: 80px;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        transition: all 0.4s;
+    }
+
+    .moduloHeader {
+        top: 16px;
+        font-size: 12px;
+        font-family: arial;
+        padding-left: 80px;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        transition: all 0.4s;
+    }
+
+        .moduloHeader .spnAmbiente {
+            position: relative;
+            margin-left: 15px;
+            padding: 3px 10px 3px;
+            width: 185px !important;
+            color: #0D5591;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            background-color: #fff;
+            border-radius: 4px;
+            font-size: 11px;
+            font-family: arial;
+            text-transform: uppercase !important;
+            text-shadow: none !important;
+        }
+}
+/* FIM Cabeçalho MOBILE*/
+
+
+.divBlocoInicial {
+    width: 290px;
+    height: 69px;
+    display: inline-block;
+    position: relative;
+    padding: 0px;
+}
+
+/*cor blocos user, data e versao*/
+.div01 {
+    background-color: #306F94;
+}
+
+.div02 {
+    background-color: #4896C4;
+}
+
+.div03 {
+    background-color: #C74433;
+}
+
+.userLogado {
+    display: block;
+    font: 16px bold Helvetica Sans, Tahoma, Calibri;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    margin-left: -15px;
+    margin-bottom: 4px;
+}
+
+.userName {
+    padding-left: 10px;
+    display: block;
+    font: 13px bold Helvetica Sans, Tahoma, Calibri;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    margin-left: -15px;
+    padding-left: 26px;
+}
+
+
+.ultAcesso {
+    display: block;
+    font: 16px bold Helvetica Sans, Tahoma, Calibri;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    margin-left: -15px;
+    margin-bottom: 4px;
+}
+
+.ultAcessoName {
+    display: block;
+    font: 13px bold Helvetica Sans, Tahoma, Calibri;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    margin-left: -15px;
+    padding-left: 26px;
+}
+
+.verSistema {
+    display: block;
+    font: 16px bold Helvetica Sans, Tahoma, Calibri;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    margin-left: -15px;
+    margin-bottom: 4px;
+}
+
+.versaoSistema {
+    margin-left: -15px;
+    padding-left: 26px;
+    display: block;
+    font: 13px bold Helvetica Sans, Tahoma, Calibri;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.divInicial {
+    position: relative;
+    width: 100%;
+    margin: 1px auto;
+}
+
+.inicialCentral {
+    width: 872px;
+    margin: 1px auto;
+}
+
+.div01img {
+    margin-top: 16px !important;
+    margin-left: -40px !important;
+    background-image: url("../content/themes/images/imgInicio001.jpg");
+    height: 146px;
+    list-style: none;
+}
+
+.div02img {
+    margin-top: 16px !important;
+    margin-left: -40px !important;
+    height: 146px;
+    background-image: url("../content/themes/images/imgInicio002.jpg");
+    list-style: none;
+}
+
+.div03img {
+    margin-top: 16px !important;
+    margin-left: -40px !important;
+    height: 146px;
+    background-image: url("../content/themes/images/imgInicio003.jpg");
+    list-style: none;
+}
+
+/*INICIAL MOBILE*/
+@media (max-width:885px) {
+    .divBlocoInicial {
+        display: block !important;
+        margin: 1px auto;
+        width: 400px;
+        height: 187px !important;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        transition: all 0.4s;
+    }
+
+    .inicialCentral {
+        width: 400px;
+        position: relative;
+        margin: 1px auto;
+    }
+
+    .titInicial {
+        font-size: 15px !important;
+    }
+
+
+    .imgHeader {
+        visibility: hidden;
+    }
+
+    .div01img {
+        background-image: url("../content/themes/images/imgInicio001a.jpg");
+    }
+
+    .div02img {
+        background-image: url("../content/themes/images/imgInicio002a.jpg");
+    }
+
+    .div03img {
+        background-image: url("../content/themes/images/imgInicio003a.jpg");
+    }
+
+    .userLogado, .ultAcesso, .verSistema {
+        padding-top: 10px;
+    }
+}
+/*FIM INICIAL MOBILE*/
+
+
+
+.imgHeader {
+    position: relative;
+    float: right;
+    margin-right: -190px;
+    width: 687px;
+    height: 70px;
+    top: 0px;
+    /*background: url(../content/themes/images/imgHeader.png) no-repeat left center;*/
+    z-index: 0 !important;
+}
+
+/***Titulo MODULO***/
+.titModulo {
+    z-index: 0 !important;
+    position: relative;
+    width: 215px;
+    height: 45px;
+    line-height: 30px;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 18px;
+    color: #FFF;
+    left: 25px;
+    text-shadow: 0 1px 0 #000;
+    text-transform: capitalize;
+}
+
+
+
+.barraUsuario {
+    position: absolute;
+    right: 20px;
+    float: right;
+    top: 9px;
+    line-height: normal;
+    -moz-box-shadow: 1px 1px 2px rgba(0,0,0, 0.1);
+    -webkit-box-shadow: 1px 2px 2px rgba(0,0,0, 0.1);
+    -o-box-shadow: 1px 1px 2px rgba(0,0,0, 0.1);
+    box-shadow: 1px 1px 2px rgba(0,0,0, 0.1);
+}
+
+    .barraUsuario .lbl_usr {
+        position: relative;
+        display: block;
+        padding: 7px 14px 4px 24px;
+        margin: 0;
+        min-width: 110px;
+        background-color: rgba(255,255,255, 0.2) !important;
+        border-color: #81C9C4;
+        border: 1px solid rgba(255,255,255, 0.3) !important;
+        background: url(../content/themes/images/btnUser.png) no-repeat 5px center;
+        border-radius: 6px 6px 0 0;
+        -webkit-border-radius: 6px 6px 0 0;
+        -ms-border-radius: 6px 6px 0 0;
+        -o-border-radius: 6px 6px 0 0;
+        font-family: 'AvantGardeBkBTBook', Helvetica, sans-serif;
+        font-size: 11px;
+        color: #fff;
+        white-space: nowrap;
+        text-transform: capitalize !important;
+    }
+
+    .barraUsuario .lbl_funcao {
+        position: relative;
+        display: block;
+        padding: 7px 14px 4px 8px;
+        margin: 0;
+        min-width: 110px;
+        background-color: rgba(255,255,255, 0.2) !important;
+        border-color: #81C9C4;
+        border: 1px solid rgba(255,255,255, 0.3) !important;
+        border-radius: 0 0 6px 6px;
+        -webkit-border-radius: 0 0 6px 6px;
+        -ms-border-radius: 0 0 6px 6px;
+        -o-border-radius: 0 0 6px 6px;
+        border-top: none !important;
+        font-family: 'AvantGardeBkBTBook', Helvetica, sans-serif;
+        font-size: 11px;
+        color: #ffffbf;
+        white-space: nowrap;
+        text-transform: capitalize !important;
+    }
+
+table.dataTable td {
+    padding: 7px 10px !important;
+}
+
+.dropdown.open .open .caret {
+    color: #000;
+}
+
+    .dropdown.open .open .caret:hover {
+        color: #fff;
+    }
+
+em {
+    color: red;
+}
+
+.border {
+    border: 1px solid #989FAF;
+    margin: 15px 0;
+}
+
+.clickVoltaPaginaInicial {
+    cursor: pointer;
+}
+
+/*vermelho #f66f6f*/
+.contadorSessao {
+    float: right;
+    z-index: 999999;
+    margin-top: -18px;
+    background-color: white;
+    border: 1px solid #357CA5;
+    padding-top: 10px;
+    border-radius: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 5px;
+}
+
+    .contadorSessao > * {
+        color: #357CA5;
+        font-size: 12px;
+    }

@@ -1,0 +1,41 @@
+﻿body {
+    background-color: #f8f8f8;
+}
+
+fieldset {
+    display: none;
+}
+
+legend {
+    text-align: center;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d4d4d4;
+    font-weight: bold;
+}
+
+.active {
+    display: block;
+}
+
+.formulario {
+    width: 450px;
+    background-color: #e8e8e8;
+    padding: 20px 30px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 450px) {
+    .formulario {
+        width: 100vw;
+        height: 100vh;
+    }
+}

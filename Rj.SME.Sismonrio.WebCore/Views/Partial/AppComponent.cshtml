@@ -1,0 +1,69 @@
+ <!-- CABEÇALHO, LOGO, TÍTULO SISTEMA-->
+<div class="header">
+    <div class="logoCab clickVoltaPaginaInicial"></div>
+    <div class="logoTituloCab hidden-xs clickVoltaPaginaInicial">
+        <label class="clickVoltaPaginaInicial">SME - Sistema de Monitoramento para Educação Infantil </label>
+    </div>
+    <div class="barraUsuario">
+        <label class="lbl_usr" data-original-title="Usuário do Sistema">Gabriel Oliveira</label>
+        <label class="lbl_funcao" data-original-title="Usuário do Sistema"> Desenvolvedor .NET / Porto Alegre - RS</label>
+    </div>
+</div>
+
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded" style="    background-color: #0F61A4;
+    border: solid 1px black;">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#" style="color: #fff;" (click)="setTitle('Home - A2SPA')" routerLink="/home" routerLinkActive="active">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: #fff;" (click)="setTitle('About - A2SPA')" routerLink="/about">Cadastros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: #fff;" (click)="setTitle('Contact - A2SPA')" routerLink="/contact">Formulários</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container body-content">
+    <router-outlet></router-outlet>
+    @{
+        string razorServerSideData = "ASP.Net Core";
+    }
+    <hr />
+    <footer>
+        <p>&copy; 2017 - A2SPA = (@razorServerSideData + {{angularClientSideData}})<sup>2</sup></p>
+    </footer>
+</div>
+
+@*<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a routerLink="/home" routerLinkActive="active" class="navbar-brand">A2SPA</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a class="nav-link" (click)="setTitle('Home - A2SPA')" routerLink="/home" routerLinkActive="active">Home</a>
+                </li>
+                <li>
+                    <a class="nav-link" (click)="setTitle('About - A2SPA')" routerLink="/about">About</a>
+                </li>
+                <li>
+                    <a class="nav-link" (click)="setTitle('Contact - A2SPA')" routerLink="/contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>*@
